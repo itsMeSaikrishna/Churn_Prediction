@@ -1,0 +1,37 @@
+# Customer Churn Analysis & Prediction Dashboard
+
+A comprehensive data science project focused on predicting customer attrition using statistical feature selection and machine learning. This repository includes extensive EDA, advanced statistical testing, and a deployed Streamlit interface for real-time predictions.
+
+## 📊 Methodology & Pipeline
+Our approach followed a rigorous statistical pipeline to ensure model reliability:
+
+1. **Exploratory Data Analysis (EDA):** Deep dive into churn drivers and distribution.
+2. **Feature Selection:** - **Numerical:** Mann-Whitney U Test to drop non-significant features.
+   - **Categorical:** Chi-Square tests for independence.
+   - **Multicollinearity:** Variance Inflation Factor (VIF) and Correlation Matrices.
+3. **Pre-processing:** Feature extraction and Scikit-learn Pipeline construction.
+4. **Imbalance Handling:** Utilized **SMOTE-NC** (or SMOTETomek) to address class imbalance.
+5. **Modeling & Tuning:** Trained XGBoost and ExtraTreesClassifier with **GridSearchCV** for hyperparameter optimization.
+
+## 📈 Model Performance
+
+### Dataset 1: XGBoost (Focus on Recall)
+* **ROC-AUC:** 0.818
+* **Recall:** 0.828 (Prioritizing capturing as many churners as possible)
+* **Accuracy:** 71.5%
+
+### Dataset 2: ExtraTrees (High Precision/Accuracy)
+* **Accuracy:** 97.75%
+* **F1-Score (Class 1):** 0.92
+* **Precision:** 0.97
+
+## 🚀 Deployment
+The model is deployed via a **Streamlit** web interface, allowing users to:
+- Input customer attributes for real-time churn probability.
+- Perform large-scale batch data analysis.
+
+## 🛠️ Tech Stack
+- **Languages:** Python
+- **Libraries:** Pandas, NumPy, Scikit-learn, XGBoost, Imbalanced-learn
+- **Stats:** SciPy (Mann-Whitney, Chi-Square), Statsmodels (VIF)
+- **Deployment:** Streamlit
