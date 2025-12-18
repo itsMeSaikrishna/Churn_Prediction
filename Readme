@@ -20,7 +20,7 @@ Our approach followed a rigorous statistical pipeline to ensure model reliabilit
 * **Recall:** 0.828 (Prioritizing capturing as many churners as possible)
 * **Accuracy:** 71.5%
 
-### Dataset 2: ExtraTrees (High Precision/Accuracy)
+### Dataset 2: RandomForest (High Precision/Accuracy)
 * **Accuracy:** 97.75%
 * **F1-Score (Class 1):** 0.92
 * **Precision:** 0.97
